@@ -1,0 +1,45 @@
+/* Import Tailwind's base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for dark mode compatibility */
+body {
+  @apply bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200;
+}
+
+a {
+  @apply text-indigo-600 dark:text-indigo-400;
+}
+
+a:hover {
+  @apply text-indigo-800 dark:text-indigo-300;
+}
+
+button {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+button:hover {
+  @apply transform scale-105;
+}
+
+input, textarea, select {
+  @apply bg-white text-gray-800 border-gray-300 dark:bg-gray-800 dark:text-gray-200 dark:border-gray-600;
+}
+
+input:focus, textarea:focus, select:focus {
+  @apply ring-2 ring-indigo-500 dark:ring-indigo-400 outline-none;
+}
+
+header {
+  @apply bg-white dark:bg-gray-800 shadow-md;
+}
+
+nav {
+  @apply bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700;
+}
+
+footer {
+  @apply bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-400;
+}
